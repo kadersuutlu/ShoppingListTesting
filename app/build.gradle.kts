@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.kader.shoppinglisttesting"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.kader.shoppinglisttesting"
@@ -39,7 +39,7 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -54,11 +54,11 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 
     // Room
-    implementation("androidx.room:room-runtime:2.6.2")
-    kapt("androidx.room:room-compiler:2.6.2")
+    implementation("androidx.room:room-runtime:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
 
     // Kotlin Extensions and Coroutines support for Room
-    implementation("androidx.room:room-ktx:2.6.2")
+    implementation("androidx.room:room-ktx:2.6.1")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -101,16 +101,16 @@ dependencies {
     testImplementation("org.robolectric:robolectric:4.3.1")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1")
     testImplementation("com.google.truth:truth:1.1")
-    testImplementation("org.mockito:mockito-core:2.25.0")
+    testImplementation("org.mockito:mockito-core:2.21.0")
 
     // Instrumented Unit Tests
     androidTestImplementation("junit:junit:4.13.2")
-    androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.12.1")
+    //androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.12.1")
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1")
     androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
     androidTestImplementation("com.google.truth:truth:1.1")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation("org.mockito:mockito-core:2.25.0")
+    androidTestImplementation("org.mockito:mockito-core:2.21.0")
 
 }
