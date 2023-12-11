@@ -1,6 +1,7 @@
 package com.kader.shoppinglisttesting.data.remote.responses
 
 import com.google.gson.annotations.SerializedName
+
 data class ImageResult(
     val comments: Int,
     val downloads: Int,

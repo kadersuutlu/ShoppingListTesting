@@ -89,8 +89,8 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.8.1")
 
     //Dagger - Hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("com.google.dagger:hilt-android:2.49")
+    kapt("com.google.dagger:hilt-compiler:2.49")
 
     implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     kapt("androidx.hilt:hilt-compiler:1.1.0")
@@ -107,6 +107,9 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1")
     testImplementation("com.google.truth:truth:1.1")
     testImplementation("org.mockito:mockito-core:2.21.0")
+    testImplementation("com.google.dagger:hilt-android-testing:2.49")
+    kaptTest("com.google.dagger:hilt-compiler:2.49")
+
 
     // Instrumented Unit Tests
     androidTestImplementation("junit:junit:4.13.2")
@@ -117,5 +120,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("org.mockito:mockito-core:2.21.0")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.49")
+    kaptAndroidTest("com.google.dagger:hilt-compiler:2.49")
 
 }

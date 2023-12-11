@@ -2,7 +2,7 @@ package com.kader.shoppinglisttesting.repositories
 
 import androidx.lifecycle.LiveData
 import com.kader.shoppinglisttesting.data.local.ShoppingItem
-import com.kader.shoppinglisttesting.data.other.Resource
+import com.kader.shoppinglisttesting.other.Resource
 import com.kader.shoppinglisttesting.data.remote.responses.ImageResponse
 
 interface ShoppingRepository {

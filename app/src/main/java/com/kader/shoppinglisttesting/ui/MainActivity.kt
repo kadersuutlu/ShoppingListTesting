@@ -1,7 +1,8 @@
-package com.kader.shoppinglisttesting
+package com.kader.shoppinglisttesting.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kader.shoppinglisttesting.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
