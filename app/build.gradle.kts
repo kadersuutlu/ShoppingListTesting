@@ -17,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         buildConfigField("String", "API_KEY", (project.findProperty("API_KEY") ?: "\"\"") as String)
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.kader.shoppinglisttesting.HiltTestRunner"
     }
 
     buildFeatures {
@@ -92,7 +92,6 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.49")
     kapt("com.google.dagger:hilt-compiler:2.49")
 
-   // implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     kapt("androidx.hilt:hilt-compiler:1.1.0")
 
     // Timber
@@ -113,13 +112,13 @@ dependencies {
 
     // Instrumented Unit Tests
     androidTestImplementation("junit:junit:4.13.2")
-    androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.12.1")
+    //androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.12.1")
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1")
     androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
     androidTestImplementation("com.google.truth:truth:1.1")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation("org.mockito:mockito-core:2.21.0")
+    //androidTestImplementation("org.mockito:mockito-core:2.21.0")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.49")
     kaptAndroidTest("com.google.dagger:hilt-compiler:2.49")
 
