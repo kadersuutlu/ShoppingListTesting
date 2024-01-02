@@ -121,5 +121,6 @@ dependencies {
     //androidTestImplementation("org.mockito:mockito-core:2.21.0")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.49")
     kaptAndroidTest("com.google.dagger:hilt-compiler:2.49")
+    debugImplementation("androidx.fragment:fragment-testing:1.3.0-alpha08")
 
 }
