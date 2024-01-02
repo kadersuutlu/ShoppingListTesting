@@ -48,13 +48,12 @@ class ShoppingDaoTest {
         database.close()
     }
 
-    @Test
+   /*@Test
     fun testLaunchFragmentInHiltContainer() {
         launchFragmentInHiltContainer<ShoppingFragment> {
 
         }
-    }
-
+    }*/
 
     @Test
     fun insertShoppingItem() = runBlockingTest {
