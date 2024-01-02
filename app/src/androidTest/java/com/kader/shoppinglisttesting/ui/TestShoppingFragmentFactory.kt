@@ -5,12 +5,13 @@ import androidx.fragment.app.FragmentFactory
 import com.bumptech.glide.RequestManager
 import com.kader.shoppinglisttesting.adapters.ImageAdapter
 import com.kader.shoppinglisttesting.adapters.ShoppingItemAdapter
+import com.kader.shoppinglisttesting.repositories.FakeShoppingRepositoryAndroidTest
 import javax.inject.Inject
 
-class ShoppingFragmentFactory @Inject constructor(
+class TestShoppingFragmentFactory @Inject constructor(
     private val imageAdapter: ImageAdapter,
     private val glide: RequestManager,
-    private val shoppingItemAdapter: ShoppingItemAdapter
+    private val shoppingItemAdapter:ShoppingItemAdapter
 ) : FragmentFactory() {
 
     override fun instantiate(classLoader: ClassLoader, className: String): Fragment {
@@ -19,6 +20,7 @@ class ShoppingFragmentFactory @Inject constructor(
             AddShoppingItemFragment::class.java.name -> AddShoppingItemFragment(glide)
             ShoppingFragment::class.java.name->ShoppingFragment(
                 shoppingItemAdapter,
+                ShoppingViewModel(FakeShoppingRepositoryAndroidTest())
             )
             else -> super.instantiate(classLoader, className)
         }
