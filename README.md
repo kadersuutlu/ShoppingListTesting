@@ -1,6 +1,6 @@
 # Android Test Otomasyonu Projesi
 
-Bu projede, kodumuzu neden test ettiğimizi ve neden manuel testin yeterli olmadığını anlamaya yöneliktir. Aşağıda projenin içeriği yer almaktadır:
+Bu proje, kodumuzu neden test ettiğimizi ve neden manuel testin yeterli olmadığını anlamaya yöneliktir. Aşağıda projenin içeriği yer almaktadır:
 
 1. **Giriş ve Temel Kavramlar**
    - Kod test etme gerekliliği ve manuel testin sınırları
